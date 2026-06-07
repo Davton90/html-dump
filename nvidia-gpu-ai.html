@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVIDIA GPU Series untuk AI - Pengenalan & Perbandingan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #76b900 0%, #000000 100%); }
+        .nvidia-green { color: #76b900; }
+        .bg-nvidia-green { background-color: #76b900; }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="gradient-bg py-12">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center mb-8">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-10 h-10 nvidia-green" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    <span class="text-2xl font-bold">NVIDIA AI GPUs</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#overview" class="hover:nvidia-green">Overview</a>
+                    <a href="#series" class="hover:nvidia-green">GPU Series</a>
+                    <a href="#comparison" class="hover:nvidia-green">Perbandingan</a>
+                    <a href="#features" class="hover:nvidia-green">Fitur</a>
+                </div>
+            </nav>
+            <div class="text-center">
+                <h1 class="text-5xl font-bold mb-4">NVIDIA GPU Series untuk AI</h1>
+                <p class="text-xl text-gray-300 mb-8">Mempercepat Revolusi Kecerdasan Buatan</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="overview" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 nvidia-green">Mengapa NVIDIA GPU untuk AI?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-700 p-6 rounded-lg"><div class="text-4xl mb-4">🚀</div><h3 class="text-xl font-bold mb-2">Performa Tinggi</h3><p class="text-gray-300">Tensor Cores khusus untuk percepatan AI.</p></div>
+                <div class="bg-gray-700 p-6 rounded-lg"><div class="text-4xl mb-4">💾</div><h3 class="text-xl font-bold mb-2">Memory Besar</h3><p class="text-gray-300">VRAM tinggi untuk model AI kompleks.</p></div>
+                <div class="bg-gray-700 p-6 rounded-lg"><div class="text-4xl mb-4">🔗</div><h3 class="text-xl font-bold mb-2">Interkoneksi Cepat</h3><p class="text-gray-300">NVLink untuk multi-GPU scaling.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="series" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 nvidia-green">Seri GPU NVIDIA untuk AI</h2>
+            
+            <div class="mb-12">
+                <div class="bg-gradient-to-r from-gray-800 to-gray-700 rounded-lg p-8 mb-6">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <div><h3 class="text-3xl font-bold mb-2">NVIDIA H100</h3><p class="text-gray-300">Flagship AI Training - Arsitektur Hopper</p></div>
+                        <div class="text-right"><span class="text-4xl font-bold nvidia-green">80 GB</span><p class="text-gray-400">HBM3</p></div>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-4 gap-4">
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">FP8 Performance</p><p class="text-2xl font-bold nvidia-green">3.95 PFLOPS</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">Bandwidth</p><p class="text-2xl font-bold nvidia-green">3.35 TB/s</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">CUDA Cores</p><p class="text-2xl font-bold nvidia-green">18,432</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">TDP</p><p class="text-2xl font-bold nvidia-green">700W</p></div>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <div class="bg-gradient-to-r from-gray-800 to-gray-700 rounded-lg p-8 mb-6">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <div><h3 class="text-3xl font-bold mb-2">NVIDIA A100</h3><p class="text-gray-300">AI Training - Arsitektur Ampere</p></div>
+                        <div class="text-right"><span class="text-4xl font-bold nvidia-green">80 GB</span><p class="text-gray-400">HBM2e</p></div>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-4 gap-4">
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">FP16 Tensor</p><p class="text-2xl font-bold nvidia-green">312 TFLOPS</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">Bandwidth</p><p class="text-2xl font-bold nvidia-green">2.0 TB/s</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">CUDA Cores</p><p class="text-2xl font-bold nvidia-green">6,912</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">TDP</p><p class="text-2xl font-bold nvidia-green">400W</p></div>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <div class="bg-gradient-to-r from-gray-800 to-gray-700 rounded-lg p-8 mb-6">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <div><h3 class="text-3xl font-bold mb-2">RTX 6000 Ada</h3><p class="text-gray-300">Workstation - Ada Lovelace</p></div>
+                        <div class="text-right"><span class="text-4xl font-bold nvidia-green">48 GB</span><p class="text-gray-400">GDDR6 ECC</p></div>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-4 gap-4">
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">FP8 Performance</p><p class="text-2xl font-bold nvidia-green">1.32 PFLOPS</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">Bandwidth</p><p class="text-2xl font-bold nvidia-green">960 GB/s</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">CUDA Cores</p><p class="text-2xl font-bold nvidia-green">18,176</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">TDP</p><p class="text-2xl font-bold nvidia-green">300W</p></div>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <div class="bg-gradient-to-r from-gray-800 to-gray-700 rounded-lg p-8 mb-6">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <div><h3 class="text-3xl font-bold mb-2">RTX 4090</h3><p class="text-gray-300">Consumer - Ada Lovelace</p></div>
+                        <div class="text-right"><span class="text-4xl font-bold nvidia-green">24 GB</span><p class="text-gray-400">GDDR6X</p></div>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-4 gap-4">
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">FP8 Performance</p><p class="text-2xl font-bold nvidia-green">1.32 PFLOPS</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">Bandwidth</p><p class="text-2xl font-bold nvidia-green">1.0 TB/s</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">CUDA Cores</p><p class="text-2xl font-bold nvidia-green">16,384</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">TDP</p><p class="text-2xl font-bold nvidia-green">450W</p></div>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <div class="bg-gradient-to-r from-gray-800 to-gray-700 rounded-lg p-8 mb-6">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <div><h3 class="text-3xl font-bold mb-2">NVIDIA L40S</h3><p class="text-gray-300">Data Center - Ada Lovelace</p></div>
+                        <div class="text-right"><span class="text-4xl font-bold nvidia-green">48 GB</span><p class="text-gray-400">GDDR6 ECC</p></div>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-4 gap-4">
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">FP8 Performance</p><p class="text-2xl font-bold nvidia-green">1.32 PFLOPS</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">Bandwidth</p><p class="text-2xl font-bold nvidia-green">864 GB/s</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">CUDA Cores</p><p class="text-2xl font-bold nvidia-green">18,176</p></div>
+                    <div class="bg-gray-800 p-4 rounded-lg text-center"><p class="text-gray-400 text-sm">TDP</p><p class="text-2xl font-bold nvidia-green">350W</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comparison" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-4 nvidia-green">Tabel Perbandingan</h2>
+            <p class="text-center text-gray-400 mb-12">Spesifikasi lengkap GPU NVIDIA untuk AI</p>
+            <div class="overflow-x-auto">
+                <table class="w-full bg-gray-700 rounded-lg">
+                    <thead class="bg-nvidia-green text-black">
+                        <tr>
+                            <th class="py-4 px-6 text-left">Spesifikasi</th>
+                            <th class="py-4 px-6 text-center">H100</th>
+                            <th class="py-4 px-6 text-center">A100</th>
+                            <th class="py-4 px-6 text-center">RTX 6000 Ada</th>
+                            <th class="py-4 px-6 text-center">RTX 4090</th>
+                            <th class="py-4 px-6 text-center">L40S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-600"><td class="py-4 px-6">Arsitektur</td><td class="text-center">Hopper</td><td class="text-center">Ampere</td><td class="text-center">Ada</td><td class="text-center">Ada</td><td class="text-center">Ada</td></tr>
+                        <tr class="border-b border-gray-600"><td class="py-4 px-6">VRAM</td><td class="text-center nvidia-green font-bold">80GB HBM3</td><td class="text-center nvidia-green font-bold">80GB HBM2e</td><td class="text-center nvidia-green font-bold">48GB GDDR6</td><td class="text-center nvidia-green font-bold">24GB GDDR6X</td><td class="text-center nvidia-green font-bold">48GB GDDR6</td></tr>
+                        <tr class="border-b border-gray-600"><td class="py-4 px-6">Bandwidth</td><td class="text-center">3.35 TB/s</td><td class="text-center">2.0 TB/s</td><td class="text-center">960 GB/s</td><td class="text-center">1.0 TB/s</td><td class="text-center">864 GB/s</td></tr>
+                        <tr class="border-b border-gray-600"><td class="py-4 px-6">CUDA Cores</td><td class="text-center">18,432</td><td class="text-center">6,912</td><td class="text-center">18,176</td><td class="text-center">16,384</td><td class="text-center">18,176</td></tr>
+                        <tr class="border-b border-gray-600"><td class="py-4 px-6">Tensor Cores</td><td class="text-center">4th Gen</td><td class="text-center">3rd Gen</td><td class="text-center">4th Gen</td><td class="text-center">4th Gen</td><td class="text-center">4th Gen</td></tr>
+                        <tr class="border-b border-gray-600"><td class="py-4 px-6">FP8</td><td class="text-center nvidia-green font-bold">3.95 PFLOPS</td><td class="text-center">-</td><td class="text-center">1.32 PFLOPS</td><td class="text-center">1.32 PFLOPS</td><td class="text-center">1.32 PFLOPS</td></tr>
+                        <tr class="border-b border-gray-600"><td class="py-4 px-6">TDP</td><td class="text-center">700W</td><td class="text-center">400W</td><td class="text-center">300W</td><td class="text-center">450W</td><td class="text-center">350W</td></tr>
+                        <tr class="border-b border-gray-600"><td class="py-4 px-6">NVLink</td><td class="text-center nvidia-green">✓</td><td class="text-center nvidia-green">✓</td><td class="text-center text-gray-500">✗</td><td class="text-center text-gray-500">✗</td><td class="text-center text-gray-500">✗</td></tr>
+                        <tr><td class="py-4 px-6">Segmentasi</td><td class="text-center">Data Center</td><td class="text-center">Data Center</td><td class="text-center">Workstation</td><td class="text-center">Consumer</td><td class="text-center">Data Center</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 nvidia-green">Teknologi Unggulan</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg border-l-4 border-nvidia-green"><h3 class="text-xl font-bold mb-3 nvidia-green">Tensor Cores Gen-4</h3><p class="text-gray-300">Mempercepat operasi matriks AI hingga 4x lebih efisien.</p></div>
+                <div class="bg-gray-800 p-6 rounded-lg border-l-4 border-nvidia-green"><h3 class="text-xl font-bold mb-3 nvidia-green">NVLink</h3><p class="text-gray-300">Interkoneksi GPU berkecepatan tinggi untuk multi-GPU.</p></div>
+                <div class="bg-gray-800 p-6 rounded-lg border-l-4 border-nvidia-green"><h3 class="text-xl font-bold mb-3 nvidia-green">HBM3 Memory</h3><p class="text-gray-300">Bandwidth hingga 3.35 TB/s pada H100.</p></div>
+                <div class="bg-gray-800 p-6 rounded-lg border-l-4 border-nvidia-green"><h3 class="text-xl font-bold mb-3 nvidia-green">Transformer Engine</h3><p class="text-gray-300">Khusus H100, training transformer 6x lebih cepat.</p></div>
+                <div class="bg-gray-800 p-6 rounded-lg border-l-4 border-nvidia-green"><h3 class="text-xl font-bold mb-3 nvidia-green">DLSS 3.0</h3><p class="text-gray-300">Rendering real-time berkualitas tinggi.</p></div>
+                <div class="bg-gray-800 p-6 rounded-lg border-l-4 border-nvidia-green"><h3 class="text-xl font-bold mb-3 nvidia-green">MIG</h3><p class="text-gray-300">Satu GPU menjadi 7 instance terpisah.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-12 nvidia-green">Kasus Penggunaan</h2>
+            <div id="accordion" data-accordion="collapse">
+                <h2 id="acc-head-1"><button type="button" class="flex justify-between w-full p-5 font-medium bg-gray-700 rounded-t-lg hover:bg-gray-600" data-accordion-target="#acc-body-1"><span>🤖 LLM Training</span><svg class="w-3 h-3 rotate-180" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/></svg></button></h2>
+                <div id="acc-body-1" class="hidden"><div class="p-5 border border-t-0 border-gray-600 bg-gray-700"><p class="text-gray-300">H100/A100 ideal untuk training GPT, BERT, LLaMA.</p><ul class="list-disc list-inside text-gray-300 mt-2"><li>H100: 100B+ parameters</li><li>A100: 10B-100B parameters</li><li>RTX 4090: Fine-tuning</li></ul></div></div>
+                <h2 id="acc-head-2"><button type="button" class="flex justify-between w-full p-5 font-medium bg-gray-700 hover:bg-gray-600" data-accordion-target="#acc-body-2"><span>🎯 AI Inference</span><svg class="w-3 h-3 rotate-180" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/></svg></button></h2>
+                <div id="acc-body-2" class="hidden"><div class="p-5 border border-t-0 border-gray-600 bg-gray-700"><p class="text-gray-300">L40S dan A100 untuk production inference.</p><ul class="list-disc list-inside text-gray-300 mt-2"><li>L40S: Serbaguna + graphics</li><li>A100: High-throughput</li></ul></div></div>
+                <h2 id="acc-head-3"><button type="button" class="flex justify-between w-full p-5 font-medium bg-gray-700 hover:bg-gray-600" data-accordion-target="#acc-body-3"><span>🔬 Scientific Research</span><svg class="w-3 h-3 rotate-180" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/></svg></button></h2>
+                <div id="acc-body-3" class="hidden"><div class="p-5 border border-t-0 border-gray-600 bg-gray-700"><p class="text-gray-300">Simulasi iklim, drug discovery, fisika partikel.</p></div></div>
+                <h2 id="acc-head-4"><button type="button" class="flex justify-between w-full p-5 font-medium bg-gray-700 rounded-b-lg hover:bg-gray-600" data-accordion-target="#acc-body-4"><span>🎨 Workstations</span><svg class="w-3 h-3 rotate-180" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/></svg></button></h2>
+                <div id="acc-body-4" class="hidden"><div class="p-5 border border-t-0 border-gray-600 bg-gray-700"><p class="text-gray-300">RTX 6000 Ada dan RTX 4090 untuk developer AI.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-4 nvidia-green">Rekomendasi</h2>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-gray-800 p-6 rounded-lg"><div class="text-3xl mb-4">🏢</div><h3 class="text-xl font-bold mb-3 nvidia-green">Enterprise</h3><ul class="space-y-2 text-gray-300"><li>✓ H100 - LLM Training</li><li>✓ A100 - General AI</li><li>✓ L40S - Inference</li></ul></div>
+                <div class="bg-gray-800 p-6 rounded-lg"><div class="text-3xl mb-4">👨‍💻</div><h3 class="text-xl font-bold mb-3 nvidia-green">Workstation</h3><ul class="space-y-2 text-gray-300"><li>✓ RTX 6000 Ada</li><li>✓ Multiple RTX 4090</li></ul></div>
+                <div class="bg-gray-800 p-6 rounded-lg"><div class="text-3xl mb-4">🎓</div><h3 class="text-xl font-bold mb-3 nvidia-green">Learning</h3><ul class="space-y-2 text-gray-300"><li>✓ RTX 4090 - Best value</li><li>✓ RTX 4080 - Budget</li></ul></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 py-12 border-t border-gray-700">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <p>© 2024 NVIDIA GPU AI Guide</p>
+        </div>
+    </footer>
+</body>
+</html>
